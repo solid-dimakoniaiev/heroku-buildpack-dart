@@ -42,9 +42,8 @@ build_pubspec() {
   #start pub from the /app folder to have correct symlink paths
   /app/dart-sdk/bin/pub get
   
-  ls
   message "-----> ENV_DIR is $env_dir"
-  /app/dart-sdk/bin/dart lib/telegram_bot.dart
+  /app/dart-sdk/bin/dart bin/telegram_bot.dart
   message "running"
 
   if [ -d "web" ]
